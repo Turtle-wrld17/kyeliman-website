@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: bisque;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: #5D9CEC;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+}
+
+nav ul li.active a {
+    background-color: black;
+    color: white;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 80%; /* Adaptation sur mobile */
+    max-width: 500px; /* Taille max */
+    border: 5px solid #d2a679; /* Bordure style beige foncé */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Pour que le footer reste en bas */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Permet au contenu de s'étendre et pousse le footer vers le bas */
+}
+
+/* Footer stylisé */
+footer {
+    background-color: #37474F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+/* Pour que le footer reste en bas */

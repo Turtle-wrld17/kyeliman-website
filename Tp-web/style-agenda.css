@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: bisque;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: #5D9CEC;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+}
+
+nav ul li.active a {
+    background-color: black;
+    color: white;
+}
+
+table {
+    width: 100%; /* Utilisation de toute la largeur dispo */
+    max-width: 900px; /* Évite que le tableau soit trop large */
+    margin: 20px auto;
+    border-collapse: collapse;
+    table-layout: fixed; /* Fixe la taille des colonnes */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 16.66%; /* Égalité entre les 6 colonnes */
+    word-wrap: break-word; /* Empêche le texte de déborder */
+    overflow: hidden; /* Cache le surplus de texte */
+}
+
+th {
+    background-color: #5D9CEC;
+    color: white;
+}
+
+.pause {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+/* Couleurs pour les matières */
+.algo { background-color: yellow; }
+.anglais { background-color: orange; }
+.bdb { background-color: lightblue; }
+.reseaux { background-color: blue; color: white; }
+.genie { background-color: pink; }
+.programmation { background-color: lightgreen; }
+.systemes { background-color: brown; color: white; }
+.sport { background-color: green; color: white; }
+.techno { background-color: darkgreen; color: white; }
+
+/* Légende */
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.legend span {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.legende {
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+}
+
+footer {
+    background-color: #37474F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
